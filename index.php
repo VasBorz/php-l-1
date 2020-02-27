@@ -94,13 +94,11 @@ for ($i = 1; $i < 10; $i++){
     for ($j = 1; $j < 10; $j++){
         if ($i * $j % 2){
             echo '<td style="background: aqua">';
-            echo $i * $j .' ';
-            echo '</td>';
         }else{
             echo '<td style="background: cadetblue">';
-            echo $i * $j .' ';
-            echo '</td>';
         }
+        echo $i * $j .' ';
+        echo '</td>';
     }
     echo '</tr>';
 }
