@@ -64,18 +64,14 @@ function task5 ($str,$symbol,$replacement = ''){
     return $res . '<br>';
 }
 
-function task6 (){
+function task6 ($file_name,$data) : string {
+    $handle = fopen($file_name, 'a') or die('Cannot open file:  '.$file_name);
+    $handle2 = fopen($file_name, 'r') or die('Cannot open file:  '.$file_name);
+    $contents = fread($handle2, filesize($file_name));
 
-}
-function task7 (){
+    fwrite($handle, $data . PHP_EOL);
+    fclose($handle);
+    fclose($handle2);
 
-}
-function task8 (){
-
-}
-function task9 (){
-
-}
-function task10 (){
-
+    return $contents;
 }
