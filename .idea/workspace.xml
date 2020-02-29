@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e3a62f54-88a9-46ab-afd1-d4af0359523e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index2.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/functions.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +48,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1582801733738</updated>
-      <workItem from="1582801734962" duration="4891000" />
+      <workItem from="1582801734962" duration="12672000" />
     </task>
     <servers />
   </component>
@@ -60,9 +60,9 @@
       <screen x="0" y="23" width="2560" height="1300" />
     </state>
     <state x="1311" y="163" key="#PHP/0.23.2560.1300@0.23.2560.1300" timestamp="1582801766091" />
-    <state x="1469" y="590" key="NewPhpFileDialog" timestamp="1582801743319">
+    <state x="1469" y="590" key="NewPhpFileDialog" timestamp="1582969943543">
       <screen x="0" y="23" width="2560" height="1300" />
     </state>
-    <state x="1469" y="590" key="NewPhpFileDialog/0.23.2560.1300@0.23.2560.1300" timestamp="1582801743319" />
+    <state x="1469" y="590" key="NewPhpFileDialog/0.23.2560.1300@0.23.2560.1300" timestamp="1582969943543" />
   </component>
 </project>
