@@ -6,7 +6,8 @@ define('TEST_CONSTANTA', 'asd');
 
 $user_name = "Igor";
 
-function showSomething() {
+function showSomething()
+{
     RETURN 'SOMETHING';
 }
 
@@ -21,45 +22,50 @@ $name = 'Vasia';
 $age = '32';
 
 echo "Меня зовут: ​$name <br>";
-echo  "Мне $age лет <br>";
-echo  "“!|/’”\"  <br>";
+echo "Мне $age лет <br>";
+echo "“!|/’”\"  <br><br>";
 
 //Задание #2
-define('ALL',80);
-define('FLOMASTER',23);
-define('KARANDASH',40);
+define('ALL', 80);
+define('CRAYON', 23);
+define('PENCIL', 40);
 
-$kraski = ALL - (FLOMASTER + KARANDASH);
-echo $kraski . '<br>';
+$paints = ALL - (CRAYON + PENCIL);
+echo 'На школьной выставке ' . ALL . ' рисунков<br>';
+echo '23 из них выполнены фломастерами:' . CRAYON . '<br>';
+echo PENCIL . ' карандашами' . '<br>';
+echo 'Рисунков красками:' . $paints . '<br><br>';
 
 //Задание #3
-$age2 = rand(1,120);
+$age2 = rand(1, 120);
 
-if ($age2 > 18 && $age2 < 65){
+if ($age2 > 18 && $age2 < 65) {
     echo 'Вам еще работать и работать <br>';
-}else if($age2 > 65 ){
+} else if ($age2 > 65) {
     echo 'Вам пора на пенсию <br>';
-}else if($age > 1 && $age <=17){
+} else if ($age2 > 1 && $age2 <= 17) {
     echo 'Вам ещё рано работать <br>';
-}else{
+} else {
     echo 'Неизвестный возраст <br>';
 }
 
 //Задание #4
-$day = rand(1,10);
+$day = rand(0, 10);
 
-switch ($day){
-    case $day >= 1 && $day <= 5 ? true : false; {
-        echo 'Это рабочий день' . " $day" . '<br>';
-        break;
-    }
-    case $day >= 6 && $day <= 7 ? true : false; {
-        echo 'Это выходной день' . " $day" . '<br>';
-        break;
-    }
-    default:{
-        echo 'Неизвестный день' . " $day" . '<br>';
-    }
+switch ($day) {
+    case 1:
+    case 2:
+    case 3:
+    case 4:
+    case 5:
+            echo "Это рабочий день $day <br>";
+            break;
+    case 6:
+    case 7:
+            echo "Это выходной день $day <br>";
+            break;
+   default:
+            echo "Неизвестный день $day <br>";
 }
 //Задание #5
 
@@ -71,13 +77,14 @@ $arr[0] = $bmw;
 $arr[1] = $toyota;
 $arr[2] = $mercedes;
 
-function res (array $arr) : string{
+function res(array $arr): string
+{
     $res = '';
 
-    foreach ($arr as $key => $value ){
-        if (is_array($value)){
+    foreach ($arr as $key => $value) {
+        if (is_array($value)) {
             $res .= res($value) . ',<br>';
-        }else{
+        } else {
             $res .= $value . ',<br>';
         }
     }
@@ -89,15 +96,15 @@ print_r(res($arr));
 
 //Задание #6
 echo '<table>';
-for ($i = 1; $i < 10; $i++){
+for ($i = 1; $i < 10; $i++) {
     echo '<tr>';
-    for ($j = 1; $j < 10; $j++){
-        if ($i * $j % 2){
+    for ($j = 1; $j < 10; $j++) {
+        if ($i * $j % 2) {
             echo '<td style="background: aqua">';
-        }else{
+        } else {
             echo '<td style="background: cadetblue">';
         }
-        echo $i * $j .' ';
+        echo $i * $j . ' ';
         echo '</td>';
     }
     echo '</tr>';
