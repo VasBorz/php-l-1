@@ -1,19 +1,12 @@
 <!--#Выполнить домашнее задание #0 (Приведение кода к стандарту PSR-2)-->
 
 <?php
-
+require_once ('src/func.php');
 define('TEST_CONSTANTA', 'asd');
 
 $user_name = "Igor";
 
-function showSomething()
-{
-    RETURN 'SOMETHING';
-}
-
-if (1 == 1) {
-    echo 'hi  <br>';
-}
+showSomething();
 
 //Выполнить домашнее задание #1
 //Задание #1

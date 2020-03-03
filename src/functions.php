@@ -12,19 +12,20 @@ function task1 (array $arr, $flag = true){
 }
 
 function task2 (){
-    $arr = array_slice(func_get_args(),1);
-    switch (func_get_args()[0]) {
+    $numbers = array_slice(func_get_args(),1);
+    $operator = func_get_args()[0];
+    switch ($operator) {
         case '+':
-            foreach ($arr as $value) { $value += $value; }
+            foreach ($numbers as $value) { $value += $value; }
             break;
         case '-':
-            foreach ($arr as $value) { $value -= $value; }
+            foreach ($numbers as $value) { $value -= $value; }
             break;
         case '*':
-            foreach ($arr as $value) { $value *= $value; }
+            foreach ($numbers as $value) { $value *= $value; }
             break;
         case '/':
-            foreach ($arr as $value) {
+            foreach ($numbers as $value) {
                 $value === 0 ? 'Ops you can\'t / on 0' : $value /= $value;
             }
     }
